@@ -15,6 +15,20 @@
             $this -> durata = $durata;
 
         }
+
+        public function getInfo() {
+
+            return $this -> titolo .
+            " (" . $this -> dataUscita . ")" .
+            "<br>Genere: " . $this -> genere . 
+            "<br>Durata: " . $this -> durata;
+
+        }
     }
+
+
+    $movie = new Movie("Avatar", "2009", "fantascienza", 162);
+
+    echo $movie -> getInfo();
 
 ?>
