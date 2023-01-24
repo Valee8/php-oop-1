@@ -26,9 +26,17 @@
         }
     }
 
+    $movies = [
+        new Movie("Avatar", "2009", "fantascienza", 162),
+        new Movie("Avengers: Endgame", "2019", "fantascienza", 181),
+    ];
 
-    $movie = new Movie("Avatar", "2009", "fantascienza", 162);
+    echo "Lista film: <br>";
 
-    echo $movie -> getInfo();
+    foreach($movies as $movie) {
+
+        echo $movie -> getInfo() . "<br><br>";
+
+    }
 
 ?>
