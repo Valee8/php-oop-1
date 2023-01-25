@@ -26,14 +26,14 @@
     class Movie {
 
         public $titolo;
-        public $dataUscita;
+        public $annoUscita;
         public $generi;
         public $durata;
 
-        function __construct($titolo, $dataUscita, $generi, $durata) {
+        function __construct($titolo, $annoUscita, $generi, $durata) {
 
             $this -> titolo = $titolo;
-            $this -> dataUscita = $dataUscita;
+            $this -> annoUscita = $annoUscita;
             $this -> generi = $generi;
             $this -> durata = $durata;
 
@@ -42,7 +42,7 @@
         public function getInfo() {
 
             return $this -> titolo .
-            " (" . $this -> dataUscita . ")" .
+            " (" . $this -> annoUscita . ")" .
             "<br>Genere: " . $this -> generi -> getGenre() . 
             "<br>Durata: " . $this -> durata . " min";
 
